@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'kotlin'
+
+configurations {
+    provided
+}
+
+sourceSets {
+    main {
+        compileClasspath += configurations.provided
+        java.srcDirs += 'src/main/kotlin'
+    }
+    test {
+        java.srcDirs += 'src/test/kotlin'
+    }
+}
+
+dependencies {
+    compile project(':domain')
+    compile kotlinStdLib
+}

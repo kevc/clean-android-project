@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.5.0'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.0-beta-2423'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    // Dependencies
+    kotlinStdLib = 'org.jetbrains.kotlin:kotlin-stdlib:1.0.0-beta-2423'
+    androidSupportLib = 'com.android.support:appcompat-v7:23.1.1'
+
+    // Test dependencies
+    jUnit = 'junit:junit:4.12'
+}
