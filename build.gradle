@@ -4,7 +4,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:1.5.0'
-        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.0-beta-2423'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.0-beta-4584'
     }
 }
 
@@ -20,7 +20,7 @@ task clean(type: Delete) {
 
 ext {
     // Dependencies
-    kotlinStdLib = 'org.jetbrains.kotlin:kotlin-stdlib:1.0.0-beta-2423'
+    kotlinStdLib = 'org.jetbrains.kotlin:kotlin-stdlib:1.0.0-beta-4584'
     androidSupportLib = 'com.android.support:appcompat-v7:23.1.1'
 
     // Test dependencies
